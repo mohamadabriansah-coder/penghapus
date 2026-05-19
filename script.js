@@ -174,6 +174,12 @@ function drawResult(data) {
     // Reset isi list sebelumnya
     list.innerHTML = "";
 
+    if (results.length === 0) {
+    const li = document.createElement("li");
+    li.textContent = "Tidak ada buah yang terdeteksi.";
+    list.appendChild(li);
+    return;
+}
     // Ambil gambar hasil
     const img = resultImage;
 
