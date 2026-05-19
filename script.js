@@ -77,7 +77,7 @@ detectBtn.addEventListener("click", async () => {
     form.append("file", fileInput.files[0]);
 
     // Confidence threshold
-    form.append("conf", "0.05");
+    form.append("conf", "0.01");
 
     // IoU threshold
     form.append("iou", "0.7");
